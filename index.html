@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <title>Mapty</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="map"></div>
+      <div class="sidebar">
+        <form id="form">
+          <ul class="form-container">
+            <li>
+              <h3><img class="logo-img" src="./logo.png" alt="logo" /></h3>
+            </li>
+            <li>
+              <label for="type">Type of workout:</label>
+              <select name="type" id="type">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+              </select>
+            </li>
+            <li>
+              <label for="distance">Distance:</label>
+              <input
+                type="number"
+                name="distance"
+                id="distance"
+                placeholder="km"
+              />
+            </li>
+            <li>
+              <label for="duration">Duration:</label>
+              <input
+                type="number"
+                name="duration"
+                id="duration"
+                placeholder="min"
+              />
+            </li>
+            <li>
+              <label for="cadence">Cadence:</label>
+              <input
+                type="number"
+                name="cadence"
+                id="cadence"
+                placeholder="spm"
+              />
+            </li>
+            <li>
+              <label for="elevation">Elevation:</label>
+              <input
+                type="number"
+                name="elevation"
+                id="elevation"
+                placeholder="m"
+              />
+            </li>
+          </ul>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

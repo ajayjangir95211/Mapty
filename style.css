@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #444;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.workout {
+  background: #fff;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.workout:hover {
+  transform: scale(1.05);
+}
+
+.workout-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.workout-details h3 {
+  margin: 0;
+} 
+
+.workout-details p {
+  margin: 0;
+}     
+
+
