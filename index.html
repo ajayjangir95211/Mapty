@@ -18,65 +18,79 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="style.css" />
+
     <script defer src="script.js"></script>
+    <script defer src="workout.js"></script>
+    <script defer src="./orientation.js"></script>
   </head>
 
   <body>
+    <div class="portrait-message inactive">
+      Please rotate your device to landscape mode for the best experience.
+    </div>
     <div class="container">
       <div id="map"></div>
       <div class="sidebar">
-        <form id="form">
-          <ul class="form-container">
-            <li>
-              <h3><img class="logo-img" src="./logo.png" alt="logo" /></h3>
-            </li>
-            <li>
-              <label for="type">Type of workout:</label>
-              <select name="type" id="type">
-                <option value="running">Running</option>
-                <option value="cycling">Cycling</option>
-              </select>
-            </li>
-            <li>
-              <label for="distance">Distance:</label>
-              <input
-                type="number"
-                name="distance"
-                id="distance"
-                placeholder="km"
-              />
-            </li>
-            <li>
-              <label for="duration">Duration:</label>
-              <input
-                type="number"
-                name="duration"
-                id="duration"
-                placeholder="min"
-              />
-            </li>
-            <li>
-              <label for="cadence">Cadence:</label>
-              <input
-                type="number"
-                name="cadence"
-                id="cadence"
-                placeholder="spm"
-              />
-            </li>
-            <li>
-              <label for="elevation">Elevation:</label>
-              <input
-                type="number"
-                name="elevation"
-                id="elevation"
-                placeholder="m"
-              />
-            </li>
-          </ul>
-          <button type="submit" class="submit">Submit</button>
+        <img class="logo-img" src="./logo.png" alt="logo" />
+        <form id="form" class="hidden">
+          <div class="form-control">
+            <label for="type">Type</label>
+            <select name="type" id="type">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label for="distance">Distance</label>
+            <input
+              type="number"
+              name="distance"
+              id="distance"
+              placeholder="km"
+            />
+          </div>
+          <div class="form-control">
+            <label for="duration">Duration</label>
+            <input
+              type="number"
+              name="duration"
+              id="duration"
+              placeholder="min"
+            />
+          </div>
+          <div class="form-control">
+            <label for="cadence">Cadence</label>
+            <input
+              type="number"
+              name="cadence"
+              id="cadence"
+              placeholder="spm"
+            />
+          </div>
+          <div class="form-control hidden">
+            <label for="elevation">Elevation</label>
+            <input
+              type="number"
+              name="elevation"
+              id="elevation"
+              placeholder="m"
+            />
+          </div>
+          <div class="form-control">
+            <button type="submit" class="btn submit">Add Workout</button>
+          </div>
+          <div class="form-control">
+            <button class="btn close">Close</button>
+          </div>
         </form>
+        <ul class="workouts"></ul>
       </div>
     </div>
   </body>
