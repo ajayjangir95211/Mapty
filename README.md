@@ -17,7 +17,7 @@ Mapty is a web application that allows users to track their workouts on a map. T
 
 ## Live Demo
 
-Experience the live demo of Wild Oasis here: [Wild Oasis Live Demo](https://ajayjangir95211.github.io/Mapty/)
+Experience the live demo of Mapty here: [Mapty Live Demo](https://ajayjangir95211.github.io/Mapty/)
 
 ## Contributing
 
